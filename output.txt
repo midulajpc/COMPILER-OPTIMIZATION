@@ -1,0 +1,30 @@
+The formate and input file for this program is as below..
+  left right
+0    a     9
+1    b   c+d
+2    e   c+d
+3    f   b+e
+4    r     f
+After checking and putting the value of common exepression
+  left right
+0    a     9
+1    b   c+d
+2    b   c+d
+3    f   b+b
+4    r     f
+After elemenating the common expression
+  left right
+0    a     9
+1    b   c+d
+2    f   b+b
+3    r     f
+(3, 2)
+After dead code elimination
+  left right
+0    b   c+d
+1    f   b+b
+2    r     f
+The final optimized code is....
+b=c+d
+f=b+b
+r=f
